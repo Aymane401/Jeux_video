@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://score.gd" type="Script" id=1]
+
+[node name="score" type="CanvasLayer"]
+
+[node name="score" type="Label" parent="."]
+margin_left = 2.31247
+margin_top = 2.73291
+margin_right = 42.3125
+margin_bottom = 16.7329
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
