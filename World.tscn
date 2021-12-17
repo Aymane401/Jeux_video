@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://ship.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Alien.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Wall.tscn" type="PackedScene" id=3]
 [ext_resource path="res://E_g5QLJXsAAOitY.png" type="Texture" id=4]
 [ext_resource path="res://score.tscn" type="PackedScene" id=5]
+[ext_resource path="res://backgroundmusic.gd" type="Script" id=6]
+[ext_resource path="res://bg.wav" type="AudioStream" id=7]
+[ext_resource path="res://pause.gd" type="Script" id=8]
+[ext_resource path="res://new_dynamicfont.tres" type="DynamicFont" id=9]
 
 [node name="World" type="Node2D"]
 
@@ -18,6 +22,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="backgroundmusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+script = ExtResource( 6 )
+
+[node name="score" parent="." instance=ExtResource( 5 )]
+
 [node name="ship" parent="." instance=ExtResource( 1 )]
 position = Vector2( -0.793701, 0 )
 
@@ -28,198 +38,306 @@ position = Vector2( 1026.96, 550.828 )
 position = Vector2( -2.30566, 552.664 )
 
 [node name="Alien" parent="." instance=ExtResource( 2 )]
-position = Vector2( 218, 16 )
+position = Vector2( 167.297, -7.78415 )
 
 [node name="Alien2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 261, 16 )
+position = Vector2( 207.297, -7.78415 )
 
 [node name="Alien3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 353, 16 )
+position = Vector2( 247.297, -7.78415 )
 
 [node name="Alien4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 307, 16 )
+position = Vector2( 287.297, -7.78415 )
 
 [node name="Alien5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 399, 16 )
+position = Vector2( 327.297, -7.78415 )
 
 [node name="Alien6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 442, 16 )
+position = Vector2( 368.297, -7.78415 )
 
 [node name="Alien7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 534, 16 )
+position = Vector2( 408.297, -7.78415 )
 
 [node name="Alien8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 488, 16 )
+position = Vector2( 448.297, -7.78415 )
 
 [node name="Alien9" parent="." instance=ExtResource( 2 )]
-position = Vector2( 580, 16 )
+position = Vector2( 488.297, -7.78415 )
 
 [node name="Alien10" parent="." instance=ExtResource( 2 )]
-position = Vector2( 623, 16 )
+position = Vector2( 528.297, -7.78415 )
 
 [node name="Alien11" parent="." instance=ExtResource( 2 )]
-position = Vector2( 715, 16 )
+position = Vector2( 570.297, -7.78415 )
 
 [node name="Alien12" parent="." instance=ExtResource( 2 )]
-position = Vector2( 669, 16 )
+position = Vector2( 610.297, -7.78415 )
 
 [node name="Alien13" parent="." instance=ExtResource( 2 )]
-position = Vector2( 758, 16 )
+position = Vector2( 650.297, -7.78415 )
 
 [node name="Alien14" parent="." instance=ExtResource( 2 )]
-position = Vector2( 178, 44 )
+position = Vector2( 690.297, -7.78415 )
 
 [node name="Alien15" parent="." instance=ExtResource( 2 )]
-position = Vector2( 221, 44 )
+position = Vector2( 730.297, -7.78415 )
 
 [node name="Alien16" parent="." instance=ExtResource( 2 )]
-position = Vector2( 313, 44 )
+position = Vector2( 771.297, -7.78415 )
 
 [node name="Alien17" parent="." instance=ExtResource( 2 )]
-position = Vector2( 267, 44 )
+position = Vector2( 811.297, -7.78415 )
 
 [node name="Alien18" parent="." instance=ExtResource( 2 )]
-position = Vector2( 359, 44 )
+position = Vector2( 851.297, -7.78415 )
 
 [node name="Alien19" parent="." instance=ExtResource( 2 )]
-position = Vector2( 402, 44 )
+position = Vector2( 209.297, 21.2159 )
 
 [node name="Alien20" parent="." instance=ExtResource( 2 )]
-position = Vector2( 494, 44 )
+position = Vector2( 249.297, 21.2159 )
 
 [node name="Alien21" parent="." instance=ExtResource( 2 )]
-position = Vector2( 448, 44 )
+position = Vector2( 289.297, 21.2159 )
 
 [node name="Alien22" parent="." instance=ExtResource( 2 )]
-position = Vector2( 540, 44 )
+position = Vector2( 329.297, 21.2159 )
 
 [node name="Alien23" parent="." instance=ExtResource( 2 )]
-position = Vector2( 583, 44 )
+position = Vector2( 369.297, 21.2159 )
 
 [node name="Alien24" parent="." instance=ExtResource( 2 )]
-position = Vector2( 675, 44 )
+position = Vector2( 410.297, 21.2159 )
 
 [node name="Alien25" parent="." instance=ExtResource( 2 )]
-position = Vector2( 629, 44 )
+position = Vector2( 450.297, 21.2159 )
 
 [node name="Alien26" parent="." instance=ExtResource( 2 )]
-position = Vector2( 718, 44 )
+position = Vector2( 490.297, 21.2159 )
 
 [node name="Alien27" parent="." instance=ExtResource( 2 )]
-position = Vector2( 227, 71 )
+position = Vector2( 530.297, 21.2159 )
 
 [node name="Alien28" parent="." instance=ExtResource( 2 )]
-position = Vector2( 270, 71 )
+position = Vector2( 570.297, 21.2159 )
 
 [node name="Alien29" parent="." instance=ExtResource( 2 )]
-position = Vector2( 362, 71 )
+position = Vector2( 612.297, 21.2159 )
 
 [node name="Alien30" parent="." instance=ExtResource( 2 )]
-position = Vector2( 316, 71 )
+position = Vector2( 652.297, 21.2159 )
 
 [node name="Alien31" parent="." instance=ExtResource( 2 )]
-position = Vector2( 408, 71 )
+position = Vector2( 692.297, 21.2159 )
 
 [node name="Alien32" parent="." instance=ExtResource( 2 )]
-position = Vector2( 451, 71 )
+position = Vector2( 732.297, 21.2159 )
 
 [node name="Alien33" parent="." instance=ExtResource( 2 )]
-position = Vector2( 543, 71 )
+position = Vector2( 772.297, 21.2159 )
 
 [node name="Alien34" parent="." instance=ExtResource( 2 )]
-position = Vector2( 497, 71 )
+position = Vector2( 813.297, 21.2159 )
 
 [node name="Alien35" parent="." instance=ExtResource( 2 )]
-position = Vector2( 589, 71 )
+position = Vector2( 853.297, 21.2159 )
 
 [node name="Alien36" parent="." instance=ExtResource( 2 )]
-position = Vector2( 632, 71 )
+position = Vector2( 893.297, 21.2159 )
 
 [node name="Alien37" parent="." instance=ExtResource( 2 )]
-position = Vector2( 724, 71 )
+position = Vector2( 170.297, 47.2159 )
 
 [node name="Alien38" parent="." instance=ExtResource( 2 )]
-position = Vector2( 678, 71 )
+position = Vector2( 210.297, 47.2159 )
 
 [node name="Alien39" parent="." instance=ExtResource( 2 )]
-position = Vector2( 767, 71 )
+position = Vector2( 250.297, 47.2159 )
 
 [node name="Alien40" parent="." instance=ExtResource( 2 )]
-position = Vector2( 191, 97 )
+position = Vector2( 290.297, 47.2159 )
 
 [node name="Alien41" parent="." instance=ExtResource( 2 )]
-position = Vector2( 234, 97 )
+position = Vector2( 330.297, 47.2159 )
 
 [node name="Alien42" parent="." instance=ExtResource( 2 )]
-position = Vector2( 326, 97 )
+position = Vector2( 371.297, 47.2159 )
 
 [node name="Alien43" parent="." instance=ExtResource( 2 )]
-position = Vector2( 280, 97 )
+position = Vector2( 411.297, 47.2159 )
 
 [node name="Alien44" parent="." instance=ExtResource( 2 )]
-position = Vector2( 372, 97 )
+position = Vector2( 451.297, 47.2159 )
 
 [node name="Alien45" parent="." instance=ExtResource( 2 )]
-position = Vector2( 415, 97 )
+position = Vector2( 491.297, 47.2159 )
 
 [node name="Alien46" parent="." instance=ExtResource( 2 )]
-position = Vector2( 507, 97 )
+position = Vector2( 531.297, 47.2159 )
 
 [node name="Alien47" parent="." instance=ExtResource( 2 )]
-position = Vector2( 461, 97 )
+position = Vector2( 573.297, 47.2159 )
 
 [node name="Alien48" parent="." instance=ExtResource( 2 )]
-position = Vector2( 553, 97 )
+position = Vector2( 613.297, 47.2159 )
 
 [node name="Alien49" parent="." instance=ExtResource( 2 )]
-position = Vector2( 596, 97 )
+position = Vector2( 653.297, 47.2159 )
 
 [node name="Alien50" parent="." instance=ExtResource( 2 )]
-position = Vector2( 688, 97 )
+position = Vector2( 693.297, 47.2159 )
 
 [node name="Alien51" parent="." instance=ExtResource( 2 )]
-position = Vector2( 642, 97 )
+position = Vector2( 733.297, 47.2159 )
 
 [node name="Alien52" parent="." instance=ExtResource( 2 )]
-position = Vector2( 731, 97 )
+position = Vector2( 774.297, 47.2159 )
 
 [node name="Alien53" parent="." instance=ExtResource( 2 )]
-position = Vector2( 231, 125 )
+position = Vector2( 814.297, 47.2159 )
 
 [node name="Alien54" parent="." instance=ExtResource( 2 )]
-position = Vector2( 274, 125 )
+position = Vector2( 854.297, 47.2159 )
 
 [node name="Alien55" parent="." instance=ExtResource( 2 )]
-position = Vector2( 366, 125 )
+position = Vector2( 210.297, 74.2159 )
 
 [node name="Alien56" parent="." instance=ExtResource( 2 )]
-position = Vector2( 320, 125 )
+position = Vector2( 250.297, 74.2159 )
 
 [node name="Alien57" parent="." instance=ExtResource( 2 )]
-position = Vector2( 412, 125 )
+position = Vector2( 290.297, 74.2159 )
 
 [node name="Alien58" parent="." instance=ExtResource( 2 )]
-position = Vector2( 455, 125 )
+position = Vector2( 330.297, 74.2159 )
 
 [node name="Alien59" parent="." instance=ExtResource( 2 )]
-position = Vector2( 547, 125 )
+position = Vector2( 370.297, 74.2159 )
 
 [node name="Alien60" parent="." instance=ExtResource( 2 )]
-position = Vector2( 501, 125 )
+position = Vector2( 411.297, 74.2159 )
 
 [node name="Alien61" parent="." instance=ExtResource( 2 )]
-position = Vector2( 593, 125 )
+position = Vector2( 451.297, 74.2159 )
 
 [node name="Alien62" parent="." instance=ExtResource( 2 )]
-position = Vector2( 636, 125 )
+position = Vector2( 491.297, 74.2159 )
 
 [node name="Alien63" parent="." instance=ExtResource( 2 )]
-position = Vector2( 728, 125 )
+position = Vector2( 531.297, 74.2159 )
 
 [node name="Alien64" parent="." instance=ExtResource( 2 )]
-position = Vector2( 682, 125 )
+position = Vector2( 571.297, 74.2159 )
 
 [node name="Alien65" parent="." instance=ExtResource( 2 )]
-position = Vector2( 771, 125 )
+position = Vector2( 613.297, 74.2159 )
 
-[node name="score" parent="." instance=ExtResource( 5 )]
+[node name="Alien66" parent="." instance=ExtResource( 2 )]
+position = Vector2( 653.297, 74.2159 )
+
+[node name="Alien67" parent="." instance=ExtResource( 2 )]
+position = Vector2( 693.297, 74.2159 )
+
+[node name="Alien68" parent="." instance=ExtResource( 2 )]
+position = Vector2( 733.297, 74.2159 )
+
+[node name="Alien69" parent="." instance=ExtResource( 2 )]
+position = Vector2( 773.297, 74.2159 )
+
+[node name="Alien70" parent="." instance=ExtResource( 2 )]
+position = Vector2( 814.297, 74.2159 )
+
+[node name="Alien71" parent="." instance=ExtResource( 2 )]
+position = Vector2( 854.297, 74.2159 )
+
+[node name="Alien72" parent="." instance=ExtResource( 2 )]
+position = Vector2( 894.297, 74.2159 )
+
+[node name="MenuPause" type="CanvasLayer" parent="."]
+pause_mode = 2
+script = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="MenuPause"]
+pause_mode = 2
+margin_left = 287.0
+margin_top = 208.0
+margin_right = 758.0
+margin_bottom = 355.0
+custom_fonts/font = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="my_signal2" from="ship" to="score" method="_on_ship_my_signal2"]
+[connection signal="my_signal" from="Alien" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien2" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien3" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien4" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien5" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien6" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien7" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien8" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien9" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien10" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien11" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien12" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien13" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien14" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien15" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien16" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien17" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien18" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien19" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien20" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien21" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien22" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien23" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien24" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien25" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien26" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien27" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien28" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien29" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien30" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien31" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien32" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien33" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien34" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien35" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien36" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien37" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien38" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien39" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien40" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien41" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien42" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien43" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien44" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien45" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien46" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien47" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien48" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien49" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien50" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien51" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien52" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien53" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien54" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien55" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien56" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien57" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien58" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien59" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien60" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien61" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien62" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien63" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien64" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien65" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien66" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien67" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien68" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien69" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien70" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien71" to="score" method="_on_Alien_my_signal"]
+[connection signal="my_signal" from="Alien72" to="score" method="_on_Alien_my_signal"]

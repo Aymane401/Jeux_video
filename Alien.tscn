@@ -1,17 +1,19 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://11719.png" type="Texture" id=1]
 [ext_resource path="res://Alien.gd" type="Script" id=2]
+[ext_resource path="res://Alienk.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 106.658, 64.659 )
 
 [node name="Alien" type="Node2D"]
 position = Vector2( 280, 16 )
+script = ExtResource( 2 )
 
 [node name="Alien" type="KinematicBody2D" parent="."]
 position = Vector2( -40, 0 )
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="Alien"]
 position = Vector2( 72.106, 32.0263 )
@@ -23,4 +25,5 @@ position = Vector2( 72.0725, 31.5011 )
 scale = Vector2( 0.165551, 0.154314 )
 shape = SubResource( 1 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Alien"]
+[connection signal="my_signal" from="." to="." method="my_signal"]
+[connection signal="my_signal" from="." to="." method="_on_Alien_my_signal"]

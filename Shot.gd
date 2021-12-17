@@ -12,6 +12,7 @@ var life_spawn = 0
 func _physics_process(delta):
 	
 	var collision = move_and_collide(Vector2.UP *delta * Moe_speed)
+	#print('im here2')
 	if collision and collision.collider.has_method("kill"):
 		collision.collider.kill()
 		queue_free()

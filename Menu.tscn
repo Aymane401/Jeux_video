@@ -1,0 +1,104 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://new_dynamicfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Menu.gd" type="Script" id=2]
+[ext_resource path="res://touches.png" type="Texture" id=3]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Button2" type="Button" parent="."]
+anchor_left = -0.213396
+anchor_top = 0.423358
+anchor_right = -0.213396
+anchor_bottom = 0.423358
+margin_left = 216.64
+margin_top = 475.989
+margin_right = 858.64
+margin_bottom = 495.989
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 204.498
+margin_top = 111.837
+margin_right = 846.498
+margin_bottom = 224.837
+custom_fonts/font = ExtResource( 1 )
+text = "Space Inavders"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+anchor_left = -0.213396
+anchor_top = 0.423358
+anchor_right = -0.213396
+anchor_bottom = 0.423358
+margin_left = 214.33
+margin_top = 398.081
+margin_right = 856.33
+margin_bottom = 418.081
+rect_pivot_offset = Vector2( 195.236, 0 )
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckBox" type="CheckBox" parent="."]
+margin_left = 211.0
+margin_top = 312.0
+margin_right = 235.0
+margin_bottom = 336.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 233.199
+margin_top = 318.098
+margin_right = 273.199
+margin_bottom = 335.098
+text = "Son"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 216.0
+margin_top = 436.0
+margin_right = 860.0
+margin_bottom = 461.0
+text = "Options"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup" type="WindowDialog" parent="."]
+visible = true
+margin_left = 255.0
+margin_top = 84.0
+margin_right = 835.0
+margin_bottom = 372.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="TextureRect" type="TextureRect" parent="Popup"]
+margin_left = 8.00916
+margin_top = 4.00446
+margin_right = 575.009
+margin_bottom = 284.004
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button2" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="CheckBox" to="." method="_on_CheckBox_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
